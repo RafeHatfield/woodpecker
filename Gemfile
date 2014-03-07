@@ -10,15 +10,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass'
 gem 'devise'
-gem 'figaro'
+gem 'figaro', github: 'laserlemon/figaro'
 gem 'pg'
 gem 'thin'
 
 # gem 'activeadmin'
 gem 'faker'
 gem 'redis'
-
-gem 'rack-mini-profiler'
 
 gem 'sidekiq', '2.15.2'
 gem 'sinatra', '>= 1.3.0', require: false
