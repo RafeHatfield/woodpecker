@@ -79,7 +79,7 @@ Woodpecker::Application.configure do
       :password  => ENV["MANDRILL_APIKEY"]
     }
   # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => 'example.com' }
+  config.action_mailer.default_url_options = { :host => 'lx-woodpecker.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
