@@ -27,9 +27,9 @@ group :development do
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'quiet_assets'
   gem 'rails_layout'
-  gem 'rb-fchange', :require=>false
-  gem 'rb-fsevent', :require=>false
-  gem 'rb-inotify', :require=>false
+  gem 'rb-fchange', require: false
+  gem 'rb-fsevent', require: false
+  gem 'rb-inotify', require: false
   gem 'annotate'
   gem 'rubocop', require: false
   gem 'meta_request'
@@ -51,7 +51,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'simplecov', :require => false
+  gem 'simplecov', require: false
   gem 'capybara'
   gem 'database_cleaner', '1.0.1'
   gem 'email_spec'
