@@ -13,6 +13,6 @@ class Task < ActiveRecord::Base
   private
 
   	def set_uuid
-  		uuid = SecureRandom.uuid
+  		self.uuid = SecureRandom.uuid
   	end
 end
