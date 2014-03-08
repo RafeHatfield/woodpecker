@@ -8,4 +8,11 @@ class Task < ActiveRecord::Base
 	validates :recurs_type, presence: true
 	validates :user, presence: true
 
+  before_create :set_uuid
+
+  private
+
+  	def set_uuid
+  		uuid = SecureRandom.uuid
+  	end
 end

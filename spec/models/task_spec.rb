@@ -11,6 +11,7 @@ describe Task do
   it { should respond_to(:tolerance_type) }
   it { should respond_to(:user) }
   it { should respond_to(:user_id) }
+  it { should respond_to(:uuid) }
 
   let(:user) { FactoryGirl.build_stubbed(:user) }
   let(:task) { FactoryGirl.build_stubbed(:task, user: user) }
