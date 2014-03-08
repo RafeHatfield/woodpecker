@@ -1,0 +1,58 @@
+<%= form_for(@task) do |f| %>
+
+  <% if @task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@task.errors.count, "error") %> prohibited this task from being saved:</h2>
+
+      <ul>
+      <% @task.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :start_at %><br>
+    <%= f.datetime_select :start_at %>
+  </div>
+
+  <div class="field">
+    <%= f.label :active %><br>
+    <%= f.check_box :active %>
+  </div>
+
+  <div class="field">
+    <%= f.label :recurs_amount %><br>
+    <%= f.text_field :recurs_amount %>
+  </div>
+
+  <div class="field">
+    <%= f.label :recurs_type %><br>
+    <%= f.text_field :recurs_type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tolerance_amount %><br>
+    <%= f.text_field :tolerance_amount %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tolerance_type %><br>
+    <%= f.text_field :tolerance_type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

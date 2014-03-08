@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @task.title %>
+</p>
+
+<p>
+  <strong>Start at:</strong>
+  <%= @task.start_at %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @task.active %>
+</p>
+
+<p>
+  <strong>Recurs amount:</strong>
+  <%= @task.recurs_amount %>
+</p>
+
+<p>
+  <strong>Recurs type:</strong>
+  <%= @task.recurs_type %>
+</p>
+
+<p>
+  <strong>Tolerance amount:</strong>
+  <%= @task.tolerance_amount %>
+</p>
+
+<p>
+  <strong>Tolerance type:</strong>
+  <%= @task.tolerance_type %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @task.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>
